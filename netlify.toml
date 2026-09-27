@@ -1,0 +1,26 @@
+# موقع ثابت + دالة واحدة لحفظ البيانات على الخادم
+[build]
+  publish = "."
+  command = ""
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# طبقة حماية ثانية: لو وصل مجلد النسخ إلى النشر بأي طريقة، لا يُقدَّم للزوار
+[[redirects]]
+  from = "/backups/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"

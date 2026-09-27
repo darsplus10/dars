@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DarsPlus — سجل الصف الدراسي</title>
+<meta name="description" content="DarsPlus من أنظمة تسنيم المحوسبة (Tasnim Systems): نظام إدارة صف دراسي: قائمة الطلاب، تسجيل الحضور والغياب والتأخر، وتوثيق الحصص.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=17">
+</head>
+<body>
+
+<header class="topbar no-print">
+  <div class="wrap">
+    <a class="brand" href="#/">📘 DarsPlus</a>
+    <nav>
+      <a href="#/">الرئيسية</a>
+      <a href="#/classes">توثيق الدروس</a>
+      <a href="#/profile">ملف الصف</a>
+      <a href="#/backup">النسخ الاحتياطي</a>
+      <a href="#" id="logoutBtn">خروج</a>
+      <span id="whoBadge" hidden></span>
+      <span class="sync local" id="syncBadge">تخزين محلي</span>
+      <span class="today" id="todayBadge"></span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer class="foot no-print">
+  <div class="wrap">
+    البيانات محفوظة داخل متصفحك على هذا الجهاز — صدّر نسخة احتياطية بانتظام من صفحة
+    <a href="#/backup">النسخ الاحتياطي</a>.
+    <div class="maker">DarsPlus · أحد منتجات أنظمة تسنيم المحوسبة — Tasnim Systems © 2026</div>
+  </div>
+</footer>
+
+<script src="xlsx.js?v=2"></script>
+<script src="app.js?v=23"></script>
+</body>
+</html>

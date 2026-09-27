@@ -1,0 +1,26 @@
+# النسخ الاحتياطية تحتوي أسماء طلاب — تبقى على الجهاز ولا تدخل المستودع ولا النشر
+backups/
+
+# ملفات بيانات الطلاب (Excel / CSV) — تُستورد من الجهاز ولا تُرفع أبداً
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.json.bak
+
+# أسرار ومتغيّرات البيئة (APP_PASSWORD تُضبط في لوحة Netlify فقط)
+.env
+.env.*
+
+# اعتماديات ومخرجات أدوات
+node_modules/
+.netlify/
+deno.lock
+
+# إعدادات محلية للمحرّر والنظام
+.claude/settings.local.json
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

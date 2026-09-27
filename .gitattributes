@@ -1,0 +1,5 @@
+# نهايات أسطر موحّدة بين Windows وLinux
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

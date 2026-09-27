@@ -1,0 +1,11 @@
+{
+  "name": "darsplus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DarsPlus — سجل الصف الدراسي: حضور وغياب وتوثيق حصص وملف الصف. أحد منتجات أنظمة تسنيم المحوسبة (Tasnim Systems)",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "author": "Tasnim Systems",
+  "license": "UNLICENSED"
+}
